@@ -39,17 +39,32 @@ class InventoryHomePage extends StatelessWidget {
               Icon(Icons.inventory_2_outlined, size: 72),
               SizedBox(height: 16),
               Text(
-                'Proyecto Flutter inicial listo',
+                'Este es el menú de inicio',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 10),
               Text(
-                'Cuando definamos el flujo, armamos modulos de stock, bodegas y movimientos.',
+                'Cuando definamos el flujo, armaremos módulos de stock, bodegas y movimientos.',
                 textAlign: TextAlign.center,
               ),
+              SizedBox(height: 10),
+              Text(
+                'Podemos agregar una base de datos compartida para que varios usuarios puedan acceder al inventario desde diferentes dispositivos.',
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: 10),
             ],
           ),
+        ),
+      ),
+
+      bottomNavigationBar: Container(
+        padding: const EdgeInsets.all(16),
+        child: const Text(
+          '© 2026 Austral Parts. Todos los derechos reservados.',
+          style: TextStyle(fontSize: 12, color: Colors.grey),
+          textAlign: TextAlign.center,
         ),
       ),
     );
